@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="بورتفوليو حسام ديزاين - جرافيك ديزاينر محترف">
+    <meta name="author" content="Hossam Design">
+    <title>حسام ديزاين | بورتفوليو جرافيك ديزاينر محترف</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo"><i class="fas fa-brush"></i> <span id="siteTitle">Hossam Design</span></div>
+    <div class="menu-btn" id="menuBtn"><i class="fas fa-bars"></i></div>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">الرئيسية</a></li>
+        <li><a href="#work" class="nav-link">شغلي</a></li>
+        <li><a href="#services" class="nav-link">خدماتي</a></li>
+        <li><a href="#pricing" class="nav-link">باقات الأسعار</a></li>
+        <li><a href="#comments" class="nav-link">التعليقات</a></li>
+        <li><a href="#contact" class="nav-link">تواصل</a></li>
+    </ul>
+</nav>
+
+<section id="home" class="hero">
+    <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+        <h1 id="heroTitle">البورتفوليو نور بيك</h1>
+        <div style="font-size: 24px; color: #ff8e53; margin-bottom: 15px; font-weight: 700;"><i class="fas fa-palette"></i> <span id="heroSubtitle">حسام ديزاين - جرافيك ديزاينر محترف</span></div>
+        <div class="tagline" id="heroTagline">"إحساسك بالجمال .. مسؤوليتي"</div>
+        <p id="heroDesc">بتفاصيل ملهاش حدود، بخلّي كل تصميم يحكي قصة ويسحر العين. بشتغل بإبداع غير تقليدي عشان تطلع بتحفة فنية تخلي علامتك التجارية تتكلم من أول نظرة.</p>
+        <div class="btn-group">
+            <a href="#work" class="btn btn-primary" id="btnExplore"><i class="fas fa-arrow-down"></i> استكشف شغلي</a>
+            <a href="#contact" class="btn btn-outline" id="btnOrder"><i class="fab fa-whatsapp"></i> احجز تصميمك</a>
+        </div>
+    </div>
+</section>
+
+<section id="work">
+    <div class="container">
+        <h2 class="section-title" id="workTitle">معرض الأعمال 💎</h2>
+        <p class="section-sub" id="workSub">إبداعات لا تُنسى</p>
+        <div class="gallery-swiper swiper" data-aos="zoom-in">
+            <div class="swiper-wrapper" id="swiperWrapper"></div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+</section>
+
+<section id="stats">
+    <div class="container">
+        <div class="stats-container">
+            <div class="stat-box"><div class="stat-number" id="projectsCount">0</div><div class="stat-label">مشاريع منجزة</div></div>
+            <div class="stat-box"><div class="stat-number" id="clientsCount">0</div><div class="stat-label">عميل سعيد</div></div>
+            <div class="stat-box"><div class="stat-number" id="expYears">0</div><div class="stat-label">سنوات خبرة</div></div>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <div class="container">
+        <h2 class="section-title" id="servicesTitle">إيه اللي بتقدمه؟</h2>
+        <p class="section-sub" id="servicesSub">خدمات جرافيك ديزاين بلمسات فنية عالمية</p>
+        <div class="services-grid" id="servicesGrid"></div>
+    </div>
+</section>
+
+<section id="pricing">
+    <div class="container">
+        <h2 class="section-title" id="pricingTitle">باقات الأسعار 💰</h2>
+        <p class="section-sub" id="pricingSub">اختر الباقة المناسبة لاحتياجاتك</p>
+        <div class="pricing-grid" id="pricingGrid"></div>
+    </div>
+</section>
+
+<section id="testimonials">
+    <div class="container">
+        <h2 class="section-title" id="testimonialsTitle">آراء عملائي ❤️</h2>
+        <p class="section-sub" id="testimonialsSub">إيه اللي قالوه عن شغلي</p>
+        <div class="testimonials-grid" id="testimonialsGrid"></div>
+    </div>
+</section>
+
+<section id="comments">
+    <div class="container">
+        <h2 class="section-title">💬 التعليقات والآراء</h2>
+        <p class="section-sub">شاركنا رأيك أو اترك تعليقاً</p>
+        
+        <div class="comments-section">
+            <div class="add-comment">
+                <h3><i class="fas fa-edit"></i> أضف تعليقك</h3>
+                <form id="commentForm">
+                    <input type="text" id="commentName" placeholder="اسمك" required>
+                    <textarea id="commentText" placeholder="اكتب تعليقك هنا..." rows="3" required></textarea>
+                    <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> إرسال التعليق</button>
+                </form>
+            </div>
+            <div class="comments-list" id="commentsList">
+                <h3><i class="fas fa-comments"></i> التعليقات</h3>
+                <div id="commentsContainer"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <div class="container">
+        <h2 class="section-title" id="contactTitle">يلا بينا نشتغل سوا 🤝</h2>
+        <p class="section-sub" id="contactSub">تواصل معي الآن وابدأ رحلة التميز البصري</p>
+        
+        <div class="contact-form-section">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label><i class="fas fa-user"></i> الاسم</label>
+                    <input type="text" id="userName" placeholder="أدخل اسمك" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-phone"></i> رقم الهاتف</label>
+                    <input type="tel" id="userPhone" placeholder="أدخل رقم هاتفك" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-envelope"></i> البريد الإلكتروني</label>
+                    <input type="email" id="userEmail" placeholder="أدخل بريدك الإلكتروني" required>
+                </div>
+                <div class="form-group">
+                    <label><i class="fas fa-comment"></i> الرسالة</label>
+                    <textarea id="userMessage" placeholder="اكتب تفاصيل طلبك..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> إرسال الطلب</button>
+            </form>
+            <div id="formMessage" style="text-align: center; margin-top: 20px;"></div>
+        </div>
+
+        <div class="social-links">
+            <a href="#" class="social-icon" id="behanceLink"><i class="fab fa-behance"></i></a>
+            <a href="#" class="social-icon" id="instagramLink"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon" id="whatsappLink"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-icon" id="emailLink"><i class="fas fa-envelope"></i></a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p id="footerText">© 2026 البورتفوليو نور بيك · حسام ديزاين · جميع الحقوق محفوظة | Made with <i class="fas fa-heart" style="color:#ff6b6b"></i> by Hossam</p>
+</footer>
+
+<a href="https://wa.me/message/N3XUZ37ZGJDWC1" class="floating-contact" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<div class="back-to-top" id="backToTop"><i class="fas fa-chevron-up"></i></div>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="data.js"></script>
+<script src="admin.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
